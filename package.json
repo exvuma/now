@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "now-build2": "webpack ./index.js",
+    "deploy": "webpack ./index.js && ./node_modules/.bin/now  ",
+    "dev": "webpack ./index.js && ./node_modules/.bin/now dev "
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "i": "^0.3.6",
     "now": "^15.0.11"
   }
 }
